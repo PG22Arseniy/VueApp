@@ -10,11 +10,13 @@ Vue.use( Router );
 
 import Home from '@/routes/Home.vue'
 import About from '@/routes/About.vue'
+import PriceSlot from '@/routes/PriceSlot.vue' 
 
 
 export default new Router({
     routes: [
-        { path:"/",     name:"Root", component: About },
-        { path:"/home", name:"Home", component: Home, props: { name: "DemoApp"} },
+        { path:"/",      name:"Home", component: Home, props: { name: "DemoApp"} },
+        { path:"/about", name:"About", component: About },
+        { path:"/price-slot",  name:"PriceSlot", component: PriceSlot }, 
     ]
 });
